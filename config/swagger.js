@@ -18,12 +18,10 @@ const options = {
     },
     servers: [
       {
-        url: 'http://localhost:3000',
-        description: 'Development server',
-      },
-      {
-        url: 'https://your-production-url.railway.app',
-        description: 'Production server',
+        url: process.env.NODE_ENV === 'production' 
+          ? `https://${process.env.RAILWAY_PUBLIC_DOMAIN || 'stage-one-backend-production-348e.up.railway.app'}`
+          : 'http://localhost:3000',
+        description: process.env.NODE_ENV === 'production' ? 'Production server' : 'Development server',
       },
     ],
     tags: [
