@@ -1,0 +1,45 @@
+{
+  "name": "stage-one-backend",
+  "version": "1.0.0",
+  "description": "RESTful API service that analyzes strings and stores their computed properties",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "test": "node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/divah21/stage-one-backend.git"
+  },
+  "keywords": [
+    "express",
+    "api",
+    "rest",
+    "backend",
+    "nodejs",
+    "string-analysis"
+  ],
+  "author": "david smart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/divah21/stage-one-backend/issues"
+  },
+  "homepage": "https://github.com/divah21/stage-one-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "helmet": "^8.0.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "winston": "^3.15.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
